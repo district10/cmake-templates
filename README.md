@@ -29,11 +29,15 @@ See
 
 See
 
-  - [qt4 console application](qt4-console),
-  - [qt4 GUI application](qt4-gui)
+  - [qt4 console application](qt4-console)
+  - [qt4 GUI application](qt4-gui) (check out the [configs.h.in](qt4-gui/configs.h.in) file)
   - [qt4 application for lazy people](qt4-project), works like `qmake -project && qmake && make` on Linux
 
 ## TODO
 
 -   More documentation
 -   More elegant & illustrative examples
+-   Planed Examples
+    + for Windows, link `*.lib` files
+    + for Linux, link `*.a`, `.so` files, set `rpath`
+    + *etc.*
