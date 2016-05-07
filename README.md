@@ -4,11 +4,11 @@ Some CMake Templates.
 
 ## C Example
 
-simple C project. See [c](c).
+Simple C project. See [c](c).
 
 ## C++ Example
 
-simple C++ project. See [cpp](cpp).
+Simple C++ project. See [cpp](cpp).
 
 ## Example to Show How to Modualize Your Project
 
