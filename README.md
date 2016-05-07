@@ -2,35 +2,60 @@
 
 Some CMake Templates.
 
+## Convensions
+
+- VS2010 means Windows Visual Studio 2010 project
+- Linux means GNU Makefile project
+- <Good> means tested okay
+- <Bad> means test result not sufficiently good
+- <?> means not tested yet
+
+## Usage
+
+### Windows
+
+Use `CMake-GUI` to generate Viisual Studio 2010 project, then use Visual Studio to compile & run.
+
+### Linux
+
+```bash
+# cd source dir (there should be a CMakeLists.txt)
+mkdir build && cd build
+cmake ..
+make
+
+# then checkout the generated binary files
+```
+
 ## C Example
 
-Simple C project. See [c](c).
+Simple C project. See [c](c). (VS2010 <Good>, Linux <Good>)
 
 ## C++ Example
 
-Simple C++ project. See [cpp](cpp).
+Simple C++ project. See [cpp](cpp). (VS2010 <Good>, Linux <Good>)
 
 ## Example to Show How to Modualize Your Project
 
-See [modules](modules).
+See [modules](modules). (VS2010 <Good>, Linux <Good>)
 
 ## Example with Support of BOOST
 
-See [boost](boost).
+See [boost](boost). (VS2010 <Good>, Linux <Good>)
 
 ## Example with Support of OpenCV
 
 See
 
-  - [opencv](opencv): for opencv2 or less
-  - [opencv3](opencv3): for opencv3 (temporarily not available)
+  - [opencv](opencv): for opencv2 or less (VS2010 <Good>, Linux <?>)
+  - [opencv3](opencv3): for opencv3 (temporarily not available) (VS2010 <?>, Linux <Good>)
 
 ## Example with Support of Qt4
 
 See
 
-  - [qt4 console application](qt4-console)
-  - [qt4 GUI application](qt4-gui) (check out the [configs.h.in](qt4-gui/configs.h.in) file)
+  - [qt4 console application](qt4-console) (VS2010 <Good>, Linux <Good>)
+  - [qt4 GUI application](qt4-gui) (check out the [configs.h.in](qt4-gui/configs.h.in) file) (VS2010 <Good>, Linux <Good>)
   - [qt4 application for lazy people](qt4-project), works like `qmake -project && qmake && make` on Linux
 
 ## TODO

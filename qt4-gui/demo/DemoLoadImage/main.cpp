@@ -3,7 +3,7 @@
 
 int main( int argc, char **argv )
 {
-    QApplication a( argc, argv s);
+    QApplication a( argc, argv );
     LoadImage li;
     li.show();
 
