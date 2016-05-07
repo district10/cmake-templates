@@ -37,9 +37,9 @@ See
 
 -   More documentation
 -   More elegant & illustrative examples
--   Planed Examples
+-   Planned Examples
     + for Windows, link `*.lib` files
-    + for Linux, link `*.a`, `.so` files, set `rpath`
+    + for Linux, link `*.a`, `*.so` files, set `rpath`
     + *etc.*
 
 ## ReadingList
@@ -50,3 +50,7 @@ These links may be useful:
   - [giddie/qt-cmake-template: Project template using CMake / Qt / NSIS or WiX / MinGW or MSVS combined in easy-to-use form](https://github.com/giddie/qt-cmake-template)
   - [cginternals/cmake-init: Template for reliable, cross-platform C++ project setup using cmake.](https://github.com/cginternals/cmake-init)
   - [district10/algo: 重复造轮子。](https://github.com/district10/algo)
+
+## Koan
+
+CMake's documentation is not for human, really terrible.
