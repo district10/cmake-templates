@@ -2,13 +2,14 @@
 
 Some CMake Templates.
 
-## Convensions
+## Conventions
 
 - VS2010 means Windows Visual Studio 2010 project
 - Linux means GNU Makefile project
 - `<Good>` means tested okay
 - `<Bad>` means test result not sufficiently good
 - `<?>` means not tested yet
+- so VS2010 `<Good>` means the CMakeLists.txt tests good on Visual Studio 2010
 
 ## Usage
 
