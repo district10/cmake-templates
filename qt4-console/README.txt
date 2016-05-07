@@ -1,0 +1,1 @@
+simple qt console application.

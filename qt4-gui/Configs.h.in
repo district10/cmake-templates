@@ -1,0 +1,4 @@
+// 请修改 工程根目录的 Configs.h.in 而不是直接修改这个文件。
+
+#define CMAKE_SOURCE_DIR "@CMAKE_SOURCE_DIR@"
+#define IMAGE_DIR "@CMAKE_SOURCE_DIR@/images"
