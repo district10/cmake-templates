@@ -1,5 +1,6 @@
 #include <iostream>
 #include <boost/timer.hpp>
+#include <stdio.h>
 
 int main( int argc, char **argv )
 {
@@ -10,7 +11,7 @@ int main( int argc, char **argv )
               << t.elapsed_min() << "s" << std::endl;
     std::cout << "now times elapsed: "
               << t.elapsed() << "s" << std::endl;
-    
+
     getchar();
     return 0;
 }
