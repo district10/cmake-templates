@@ -35,6 +35,17 @@ Simple C project. See [c](c). (VS2010 `<Good>`, Linux `<Good>`)
 
 Simple C++ project. See [cpp](cpp). (VS2010 `<Good>`, Linux `<Good>`)
 
+## C++11 Example
+
+C++ project. See [cpp](cpp). (VS2010 `<?>`, Linux `<Good>`)
+
+Only tested a few C++11 (aka C++0x) features:
+
+  - auto
+  - const iterator
+  - foreach
+  - lambda function
+
 ## Example to Show How to Modualize Your Project
 
 See [modules](modules). (VS2010 `<Good>`, Linux `<Good>`)
@@ -56,7 +67,7 @@ See
 
   - [qt4 console application](qt4-console) (VS2010 `<Good>`, Linux `<Good>`)
   - [qt4 GUI application](qt4-gui) (check out the [configs.h.in](qt4-gui/configs.h.in) file) (VS2010 `<Good>`, Linux `<Good>`)
-  - [qt4 application for lazy people](qt4-project), works like `qmake -project && qmake && make` on Linux
+  - [qt4 application for lazy people](qt4-project), works like `qmake -project && qmake && make` on Linux (VS2010 `<Good>`, Linux `<Good>`)
 
 ## TODO
 
