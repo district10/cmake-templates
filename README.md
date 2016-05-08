@@ -73,7 +73,7 @@ See [boost](boost). (VS2010 :smile:, Linux :smile:)
 See
 
   - [opencv](opencv): for opencv2 or less (VS2010 :smile:, Linux :question:)
-  - [opencv3](opencv3): for opencv3 (temporarily not available) (VS2010 :question:, Linux :smile:)
+  - [opencv3](opencv3): for opencv3 (VS2010 :question:, Linux :smile:)
 
 (I have OpenCV2 on Win, and OpenCV3 on Linux, that's why...)
 
@@ -88,6 +88,16 @@ See
 ## Example with Support of Qt5
 
 TODO
+
+## Get'em Together (advanced examples)
+
+-   [district10/algo: 重复造轮子。](https://github.com/district10/algo)
+    + Libs
+        * google test (gmock), for testing and benchmarking, etc
+        * cppformat, the missing string formating lib
+    + modulized
+    + advanced linking style
+-   TODO...
 
 ## TODO
 
@@ -105,7 +115,6 @@ These links may be useful:
   - [Search · cmake templates](https://github.com/search?utf8=%E2%9C%93&q=cmake+templates)
   - [giddie/qt-cmake-template: Project template using CMake / Qt / NSIS or WiX / MinGW or MSVS combined in easy-to-use form](https://github.com/giddie/qt-cmake-template)
   - [cginternals/cmake-init: Template for reliable, cross-platform C++ project setup using cmake.](https://github.com/cginternals/cmake-init)
-  - [district10/algo: 重复造轮子。](https://github.com/district10/algo)
 
 ## Koan
 
