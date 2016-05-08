@@ -11,7 +11,7 @@ In Visual Studio 2010, you can use:
   - const iterator
   - lambda calculas
 
-without any setup, see CMakeLists.txt for further infomation.
+without any setup, see CMakeLists.txt for further information.
 
 -------------------------------------------------------------
 

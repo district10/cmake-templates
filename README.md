@@ -5,7 +5,7 @@ Some CMake Templates.
 ## Conventions
 
 - VS2010 means Windows Visual Studio 2010 project
-- Linux means GNU Makefile project
+- Linux means GNU Makefile project, GCC 4.9 as the compiler
 - :smile: means tested okay
 - :cry: means test result not sufficiently good
 - :question: means not tested yet
@@ -56,7 +56,7 @@ On VS2010:
   - lambda function
 
 VS2010 by default supports 1) auto; 2) const iterator; 3) lambda, but not foreach.
-See [cpp11/CMakeLists.txt](cpp11/CMakeLists.txt) for further infomation.
+See [cpp11/CMakeLists.txt](cpp11/CMakeLists.txt) for further information.
 
 Bonus: A VS2010 example with some C++11 features: [cpp11_vs2010](cpp11_vs2010).
 
