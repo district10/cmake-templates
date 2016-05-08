@@ -6,10 +6,10 @@ Some CMake Templates.
 
 - VS2010 means Windows Visual Studio 2010 project
 - Linux means GNU Makefile project, GCC 4.9 as the compiler
-- :smile: means tested okay
+- :smile: means tested okay/good
 - :cry: means test result not sufficiently good
 - :question: means not tested yet
-- so VS2010 :smile: means the CMakeLists.txt tests good on Visual Studio 2010
+- so (VS2010 :smile:) means the CMakeLists.txt tests good on Visual Studio 2010
 
 ## Usage
 
@@ -91,6 +91,8 @@ TODO
 
 ## Get'em Together (advanced examples)
 
+This part is called CMake in Action.
+
 -   [district10/algo: 重复造轮子。](https://github.com/district10/algo)
     + Libs
         * google test (gmock), for testing and benchmarking, etc
@@ -119,4 +121,4 @@ These links may be useful:
 ## Koan
 
 -   CMake's documentation is not for human. It really smells
--   Adapt to different standards is by no means easy
+-   Adapt to various standards is by no means easy, it's kind of brain fucking
