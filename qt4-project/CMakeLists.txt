@@ -4,8 +4,8 @@ cmake_minimum_required( VERSION 2.6 )
 find_package( Qt4 REQUIRED )
 include( ${QT_USE_FILE} )
 
-include_directories( ${CMAKE_SOURCE_DIR}/)
-include_directories( ${CMAKE_BINARY_DIR}/)
+include_directories( ${CMAKE_SOURCE_DIR}/ )
+include_directories( ${CMAKE_BINARY_DIR}/ )
 
 # based on: https://cmake.org/Wiki/CMakeMacroFilterOut
 macro( filter_out FILTERS INPUTS OUTPUTS )
@@ -31,7 +31,7 @@ endmacro( filter_out FILTERS INPUTS OUTPUTS )
 
 file( GLOB_RECURSE UI_FILES *.ui )
 file( GLOB_RECURSE HDRS_FILES *.h *.hpp )
-file( GLOB_RECURSE SRCS_FILES *.cpp *.c)
+file( GLOB_RECURSE SRCS_FILES *.cpp *.c )
 file( GLOB_RECURSE RCS_FILES *.qrc )
 
 set( FILTERS ".*CompilerId.*" )
