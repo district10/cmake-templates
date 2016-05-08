@@ -58,6 +58,8 @@ On VS2010:
 VS2010 by default supports 1) auto; 2) const iterator; 3) lambda, but not foreach.
 See [cpp11/CMakeLists.txt](cpp11/CMakeLists.txt) for further infomation.
 
+Bonus: A VS2010 example with some C++11 features: [cpp11_vs2010](cpp11_vs2010).
+
 ## Example to Show How to Modualize Your Project
 
 See [modules](modules). (VS2010 :smile:, Linux :smile:)
@@ -107,4 +109,5 @@ These links may be useful:
 
 ## Koan
 
-CMake's documentation is not for human, really terrible.
+-   CMake's documentation is not for human. It really smells
+-   Adapt to different standards is by no means easy
