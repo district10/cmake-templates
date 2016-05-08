@@ -1,0 +1,1 @@
+double square( double x );
