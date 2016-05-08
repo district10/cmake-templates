@@ -6,10 +6,10 @@ Some CMake Templates.
 
 - VS2010 means Windows Visual Studio 2010 project
 - Linux means GNU Makefile project
-- `<Good>` means tested okay
-- `<Bad>` means test result not sufficiently good
-- `<?>` means not tested yet
-- so VS2010 `<Good>` means the CMakeLists.txt tests good on Visual Studio 2010
+- :smile: means tested okay
+- :cry: means test result not sufficiently good
+- :question: means not tested yet
+- so VS2010 :smile: means the CMakeLists.txt tests good on Visual Studio 2010
 
 ## Usage
 
@@ -30,15 +30,15 @@ make
 
 ## C Example
 
-Simple C project. See [c](c). (VS2010 `<Good>`, Linux `<Good>`)
+Simple C project. See [c](c). (VS2010 :smile:, Linux :smile:)
 
 ## C++ Example
 
-Simple C++ project. See [cpp](cpp). (VS2010 `<Good>`, Linux `<Good>`)
+Simple C++ project. See [cpp](cpp). (VS2010 :smile:, Linux :smile:)
 
 ## C++11 Example
 
-C++ project. See [cpp11](cpp11). (VS2010 `<Bad?>`, Linux `<Good>`)
+C++ project. See [cpp11](cpp11). (VS2010 :cry: :question:, Linux :smile:)
 
 Only tested a few C++11 (aka C++0x) features:
 
@@ -52,18 +52,18 @@ see [cpp11/CMakeLists.txt](cpp11/CMakeLists.txt) for further infomation.
 
 ## Example to Show How to Modualize Your Project
 
-See [modules](modules). (VS2010 `<Good>`, Linux `<Good>`)
+See [modules](modules). (VS2010 :smile:, Linux :smile:)
 
 ## Example with Support of Boost
 
-See [boost](boost). (VS2010 `<Good>`, Linux `<Good>`)
+See [boost](boost). (VS2010 :smile:, Linux :smile:)
 
 ## Example with Support of OpenCV
 
 See
 
-  - [opencv](opencv): for opencv2 or less (VS2010 `<Good>`, Linux `<?>`)
-  - [opencv3](opencv3): for opencv3 (temporarily not available) (VS2010 `<?>`, Linux `<Good>`)
+  - [opencv](opencv): for opencv2 or less (VS2010 :smile:, Linux :question:)
+  - [opencv3](opencv3): for opencv3 (temporarily not available) (VS2010 :question:, Linux :smile:)
 
 (I have OpenCV2 on Win, and OpenCV3 on Linux, that's why...)
 
@@ -71,9 +71,9 @@ See
 
 See
 
-  - [qt4 console application](qt4-console) (VS2010 `<Good>`, Linux `<Good>`)
-  - [qt4 GUI application](qt4-gui) (check out the [configs.h.in](qt4-gui/configs.h.in) file) (VS2010 `<Good>`, Linux `<Good>`)
-  - [qt4 application for lazy people](qt4-project), works like `qmake -project && qmake && make` on Linux (VS2010 `<Good>`, Linux `<Good>`)
+  - [qt4 console application](qt4-console) (VS2010 :smile:, Linux :smile:)
+  - [qt4 GUI application](qt4-gui) (check out the [configs.h.in](qt4-gui/configs.h.in) file) (VS2010 :smile:, Linux :smile:)
+  - [qt4 application for lazy people](qt4-project), works like `qmake -project && qmake && make` on Linux (VS2010 :smile:, Linux :smile:)
 
 ## Example with Support of Qt5
 
