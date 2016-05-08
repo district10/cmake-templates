@@ -40,15 +40,21 @@ Simple C++ project. See [cpp](cpp). (VS2010 :smile:, Linux :smile:)
 
 C++ project. See [cpp11](cpp11). (VS2010 :cry: :question:, Linux :smile:)
 
-Only tested a few C++11 (aka C++0x) features:
+C++11 (aka C++0x) features works on Linux:
 
   - auto
   - const iterator
-  - foreach
+  - foreach (I mean `for(type varname, container)`.)
   - lambda function
 
-VS2010 by default supports 1) auto; 2) const iterator; 3) lambda,
-see [cpp11/CMakeLists.txt](cpp11/CMakeLists.txt) for further infomation.
+On VS2010:
+
+  - auto
+  - const iterator
+  - lambda function
+
+VS2010 by default supports 1) auto; 2) const iterator; 3) lambda, but not foreach.
+See [cpp11/CMakeLists.txt](cpp11/CMakeLists.txt) for further infomation.
 
 ## Example to Show How to Modualize Your Project
 
