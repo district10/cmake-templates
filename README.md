@@ -15,7 +15,7 @@ Some CMake Templates.
 
 ### Windows
 
-Use `CMake-GUI` to generate Viisual Studio 2010 project, then use Visual Studio to compile & run.
+Use `CMake-GUI` to generate Visual Studio 2010 project, then use Visual Studio to compile & run.
 
 Tutorial: [HOWTO: CMake + Visual Studio 2010 · Issue #1 · district10/cmake-templates](https://github.com/district10/cmake-templates/issues/1).
 
