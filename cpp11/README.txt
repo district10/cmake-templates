@@ -27,5 +27,5 @@ My advice is:
   - don't use `for( int i, v )' feature
   - be conservative, use lambda, const iterator, auto is pretty much enough
   - for VS2010 project, check
-    <https://github.com/district10/cmake-templates/tree/master/cpp>
+    <https://github.com/district10/cmake-templates/tree/master/cpp11_vs2010>
   - for Linux GNUMake, this CMakeList.txt works fine    
