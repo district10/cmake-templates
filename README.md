@@ -93,12 +93,19 @@ TODO
 
 This part is called CMake in Action.
 
+-   [ToyAuthor/luapp: Using lua in C++ style. Build system is CMake.](https://github.com/ToyAuthor/luapp)
+
+    +   a great cmake wrapper for lua, a great c++ wrapper for lua
+    +   I forked it, and annotated (in chinese), it's really great! My fork: [4ker/luapp: Using lua in C++ style. Build system is CMake.](https://github.com/4ker/luapp).
+
 -   [district10/algo: 重复造轮子。](https://github.com/district10/algo)
+
     + Libs
         * google test (gmock), for testing and benchmarking, etc
         * cppformat, the missing string formating lib
     + modulized
     + advanced linking style
+
 -   TODO...
 
 ## TODO
