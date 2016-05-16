@@ -5,3 +5,7 @@ Mods of OpenCV official example cmake demo:
 See cpp version at:
 
     + <https://github.com/Itseez/opencv/tree/master/samples/cpp/example_cmake>
+
+Environment var: $OpenCV_DIR
+
+    in this path, it should contain `OpenCVConfig.cmake'.
