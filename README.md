@@ -30,9 +30,9 @@ Some CMake Templates.
 [refcpp11]: #33-c11-example
 [refcpp11vs2010]: #33-c11-example
 [refmodule]: #34-example-to-show-how-to-modualize-your-project
-[refocv]: #35-example-with-support-of-opencv
-[refocv3]: #35-example-with-support-of-opencv
-[refboost]: #36-example-with-support-of-boost
+[refboost]: #35-example-with-support-of-boost
+[refocv]: #36-example-with-support-of-opencv
+[refocv3]: #36-example-with-support-of-opencv
 [refqt4c]: #37-example-with-support-of-qt4
 [refqt4g]: #37-example-with-support-of-qt4
 [refqt4p]: #37-example-with-support-of-qt4
