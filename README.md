@@ -369,7 +369,27 @@ This part is called CMake in Action.
     + for Linux, link `*.a`, `*.so` files, set `rpath`
     + *etc.*
 
-## 5. ReadingList
+## 5. Snippets
+
+```cmake
+set( PROGRAM_TARGETS
+    SeedFillTest
+    SuperSeedsTest
+    BoundaryFillTest
+    contours
+)
+
+include_directories( ${CMAKE_CURRENT_SOURCE_DIR} )
+
+foreach( TARGET_NAME ${PROGRAM_TARGETS} )
+	add_executable( ${TARGET_NAME} ${TARGET_NAME}.cpp )
+	# add_dependencies( ${TARGET_NAME} Blahblah )
+	target_link_libraries( ${TARGET_NAME} ${OpenCV_LIBS} ${QT_LIBRARIES} Blahblah )
+    set_target_properties( ${TARGET_NAME} PROPERTIES FOLDER MiscExamples )
+endforeach( TARGET_NAME )
+```
+
+## 6. ReadingList
 
 These links may be useful:
 
@@ -377,7 +397,7 @@ These links may be useful:
   - [giddie/qt-cmake-template: Project template using CMake / Qt / NSIS or WiX / MinGW or MSVS combined in easy-to-use form](https://github.com/giddie/qt-cmake-template)
   - [cginternals/cmake-init: Template for reliable, cross-platform C++ project setup using cmake.](https://github.com/cginternals/cmake-init)
 
-## 6. Koan
+## 7. Koan
 
 -   CMake's documentation is not for human. It really smells
 -   Adapt to various standards is by no means easy, it's kind of brain fucking
