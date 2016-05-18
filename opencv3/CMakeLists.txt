@@ -2,6 +2,7 @@ project( OPENCV3 )
 cmake_minimum_required( VERSION 2.8 )
 
 find_package( OpenCV REQUIRED )
+# include( $ENV{OpenCV3_DIR}/OpenCVConfig.cmake )
 
 message( STATUS "OpenCV library status:" )
 message( STATUS "    version: ${OpenCV_VERSION}" )
