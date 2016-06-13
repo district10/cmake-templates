@@ -6,15 +6,15 @@ Some CMake Templates.
 
 **Conventions**
 
-- :smile: means tested okay/good
-- :cry: means test result not sufficiently good
-- :question: means not tested yet
+-   :smile: means tested okay/good
+-   :rage: means test result not sufficiently good
+-   :question: means not tested yet
 
 | Project                       | Linux + GCC 4.8+ | Win + VS2010 | Win + VS2015 |
 | :---------------------------: | :--------------: | :----------: | :----------: |
 | [c][refc]                     | :smile:          |  :smile:     | :smile:      |
 | [c++][refcpp]                 | :smile:          |  :smile:     | :smile:      |
-| [c++11][refcpp11]             | :smile:          |  :cry:       | :smile:      |
+| [c++11][refcpp11]             | :smile:          |  :rage:      | :smile:      |
 | [c++11vs2010][refcpp11vs2010] | :smile:          |  :smile:     | :smile:      |
 | [module][refmodule]           | :smile:          |  :smile:     | :smile:      |
 | [opencv][refocv]              | :question:       |  :smile:     | :question:   |
@@ -382,9 +382,9 @@ set( PROGRAM_TARGETS
 include_directories( ${CMAKE_CURRENT_SOURCE_DIR} )
 
 foreach( TARGET_NAME ${PROGRAM_TARGETS} )
-	add_executable( ${TARGET_NAME} ${TARGET_NAME}.cpp )
-	# add_dependencies( ${TARGET_NAME} Blahblah )
-	target_link_libraries( ${TARGET_NAME} ${OpenCV_LIBS} ${QT_LIBRARIES} Blahblah )
+    add_executable( ${TARGET_NAME} ${TARGET_NAME}.cpp )
+    # add_dependencies( ${TARGET_NAME} Blahblah )
+    target_link_libraries( ${TARGET_NAME} ${OpenCV_LIBS} ${QT_LIBRARIES} Blahblah )
     set_target_properties( ${TARGET_NAME} PROPERTIES FOLDER MiscExamples )
 endforeach( TARGET_NAME )
 ```
