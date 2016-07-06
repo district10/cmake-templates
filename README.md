@@ -44,18 +44,24 @@ Some CMake Templates.
 
 Use `CMake-GUI` to generate Visual Studio 2010 project, then use Visual Studio to compile & run.
 
-Tutorial: [HOWTO: Win + CMake + Visual Studio 2010 · Issue #1 · district10/cmake-templates](https://github.com/district10/cmake-templates/issues/1).
+Here is a Tutorial: [HOWTO: Win + CMake + Visual Studio 2010 · Issue #1 · district10/cmake-templates](https://github.com/district10/cmake-templates/issues/1).
 
 ### 2.2. Linux
+
+Most commonly, we build Makefile project:
 
 ```bash
 # cd source dir (there should be a CMakeLists.txt)
 mkdir build && cd build
-cmake ..
+cmake ..            # want a release build? try `cmake -DCMAKE_BUILD_TYPE=Release ..'
 make
 
 # then checkout the generated binary files
 ```
+
+But we can build CodeBlocks projects too, see my tutorial:
+[HOWTO: Linux + CMake + CodeBlocks + GNU Make · Issue #2 · district10/cmake-templates](https://github.com/district10/cmake-templates/issues/2), or use qt-creator to open CMakeLists.txt directly, see my tutorial:
+[HOWTO: Use Qt creator to Open CMakeLists.txt directly (will generate proper project files) · Issue #5 · district10/cmake-templates](https://github.com/district10/cmake-templates/issues/5).
 
 ## 3. Examples
 
@@ -180,6 +186,9 @@ target_link_libraries( ${PROJECT_NAME} ${Boost_LIBRARIES} )
 See [boost](boost).
 
 ### 3.6. Example with Support of OpenCV
+
+Want to how to configure opencv on your system? Checkout my tutorial:
+[HOWTO: OpenCV 2 & OpenCV 3 · Issue #4 · district10/cmake-templates](https://github.com/district10/cmake-templates/issues/4).
 
 opencv 2 or less
 
