@@ -1,5 +1,5 @@
 #include <cstdio>
-#include <boost/date_time/posix_time/posix_time.hpp>
+#include <boost/date_time/posix_time/posix_time_types.hpp>
 
 int main( void  )
 {
@@ -8,12 +8,12 @@ int main( void  )
 
     printf( "%s\t->\t%04d-%02d-%02d %02d:%02d:%02d\n"
           , "date '+%Y-%m-%d %H:%M:%S'"
-          , now.date().year()
-          , now.date().month()
-          , now.date().day()
-          , now.time_of_day().hours()
-          , now.time_of_day().minutes()
-          , now.time_of_day().seconds() );
+          , (int)now.date().year()
+          , (int)now.date().month()
+          , (int)now.date().day()
+          , (int)now.time_of_day().hours()
+          , (int)now.time_of_day().minutes()
+          , (int)now.time_of_day().seconds() );
 
     return 0;
 }
