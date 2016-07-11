@@ -1,6 +1,4 @@
-#include "extras.h"
-#include "square.h"
-#include "cubic.h"
+#include "functions.h"
 
 double power5( double x )
 {

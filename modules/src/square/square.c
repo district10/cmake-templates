@@ -1,4 +1,4 @@
-#include "square.h"
+#include "functions.h"
 
 double square( double x )
 {

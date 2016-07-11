@@ -1,7 +1,5 @@
 #include <stdio.h>
-#include "square.h"
-#include "cubic.h"
-#include "extras.h"
+#include "functions.h"
 
 int main ( int argc, char **argv )
 {

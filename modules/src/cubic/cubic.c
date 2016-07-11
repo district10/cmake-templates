@@ -1,4 +1,4 @@
-#include "cubic.h"
+#include "functions.h"
 
 double cubic( double x )
 {

@@ -1,1 +1,0 @@
-double cubic( double x );
