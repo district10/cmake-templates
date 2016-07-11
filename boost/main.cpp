@@ -1,17 +1,19 @@
-#include <iostream>
-#include <boost/timer.hpp>
-#include <stdio.h>
+#include <cstdio>
+#include <boost/date_time/posix_time/posix_time.hpp>
 
-int main( int argc, char **argv )
+int main( void  )
 {
-    boost::timer t;
-    std::cout << "max timespan: "
-              << t.elapsed_max() / 3600 << "h" << std::endl;
-    std::cout << "min timespan: "
-              << t.elapsed_min() << "s" << std::endl;
-    std::cout << "now times elapsed: "
-              << t.elapsed() << "s" << std::endl;
+    namespace pt = boost::posix_time;
+    pt::ptime now = pt::second_clock::local_time();
 
-    getchar();
+    printf( "%s\t->\t%04d-%02d-%02d %02d:%02d:%02d\n"
+          , "date '+%Y-%m-%d %H:%M:%S'"
+          , now.date().year()
+          , now.date().month()
+          , now.date().day()
+          , now.time_of_day().hours()
+          , now.time_of_day().minutes()
+          , now.time_of_day().seconds() );
+
     return 0;
 }
