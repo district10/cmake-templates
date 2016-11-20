@@ -1,1 +1,1 @@
-add_library( LibCubic ${CUBICS} cubic.c )
+add_library( LibCubic STATIC cubic.c )
