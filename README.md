@@ -23,7 +23,7 @@ Some CMake Templates.
 | [qt4-console][refqt4c]        | :smile:          |  :smile:     | :smile:      |
 | [qt4-gui][refqt4g]            | :smile:          |  :smile:     | :smile:      |
 | [qt4-project][refqt4p]        | :smile:          |  :smile:     | :smile:      |
-| [qt5-project][refqt5p]        | :question:       |  :question:  | :smile:      |
+| [qt5-project][refqt5p]        | :smile:          |  :question:  | :smile:      |
 
 [refc]: #31-c-example
 [refcpp]: #32-c-example
