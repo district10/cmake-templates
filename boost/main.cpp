@@ -15,5 +15,6 @@ int main( void  )
           , (int)now.time_of_day().minutes()
           , (int)now.time_of_day().seconds() );
 
+    // getchar();
     return 0;
 }

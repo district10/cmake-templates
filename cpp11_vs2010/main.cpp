@@ -20,6 +20,6 @@ int main( void )
     }
     std::cout << "\n";
 
-    getchar();
+    // getchar();
     return 0;
 }

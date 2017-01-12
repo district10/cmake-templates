@@ -15,6 +15,6 @@ int main ( int argc, char **argv )
         std::cout << *it << "^2\t--->\t" << square(*it) << std::endl;
     }
 
-    getchar();
+    // getchar();
     return 0;
 }

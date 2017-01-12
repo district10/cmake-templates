@@ -3,6 +3,6 @@
 int main ( int argc, char **argv )
 {
     fprintf( stdout, "%s", "Hello World.\n" );
-    getchar();
+    // getchar();
     return 0;
 }

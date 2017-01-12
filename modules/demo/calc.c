@@ -9,6 +9,6 @@ int main ( int argc, char **argv )
     fprintf( stdout, "x^4    of %5.2f is %18.6f\n", x, power4(x) );
     fprintf( stdout, "x^5    of %5.2f is %18.6f\n", x, power5(x) );
 
-    getchar();
+    // getchar();
     return 0;
 }

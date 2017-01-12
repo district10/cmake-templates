@@ -75,6 +75,11 @@ cmake_minimum_required( VERSION 2.6 )
 add_executable( ${PROJECT_NAME} main.c )
 ```
 
+`cmake_minimum_required( ... )` is needed in root CMakeLists.txt, always.
+
+The `${PROJECT_NAME}` is variable with value `C`,
+which is set by the `project( C )`.
+
 See [c](c).
 
 ### 3.2. C++ Example
@@ -83,8 +88,8 @@ Simple C++ project.
 
 ```cmake
 project( CPP )
-cmake_minimum_required( VERSION 2.6 )
-file( GLOB SRCS *.c *.cpp *.cc *.h *.hpp )
+make_minimum_required( VERSION 2.6 )
+file( GLOB SRCS *.c *.cpp *.cc *.h *.hpp )  # a varible called SRCS with all files whose path match "*.c *.cpp..."
 add_executable( ${PROJECT_NAME} ${SRCS} )
 ```
 
@@ -111,7 +116,7 @@ else()
 endif()
 ```
 
-C++11 (aka C++0x) features works on Linux:
+C++11 (aka C++0x) features works on GCC 4.9+:
 
   - auto
   - const iterator
@@ -130,6 +135,8 @@ See [cpp11/CMakeLists.txt](cpp11/CMakeLists.txt) for further information.
 See [cpp11](cpp11).
 
 Bonus: A VS2010 example with some C++11 features: [cpp11_vs2010](cpp11_vs2010).
+
+I recommend Visual Studio 2015 Community Edition.
 
 ### 3.4. Example to Show How to Modualize Your Project
 
@@ -183,12 +190,14 @@ add_executable( ${PROJECT_NAME} main.cpp )
 target_link_libraries( ${PROJECT_NAME} ${Boost_LIBRARIES} )
 ```
 
+Ubuntu install: `sudo apt-get install libboost-all-dev`.
+
 See [boost](boost).
 
 ### 3.6. Example with Support of OpenCV
 
-Want to how to configure opencv on your system? Checkout my tutorial:
-[HOWTO: OpenCV 2 & OpenCV 3 · Issue #4 · district10/cmake-templates](https://github.com/district10/cmake-templates/issues/4).
+Want to how to configure both opencv 2 & 3 on your system?
+Checkout my tutorial: [HOWTO: OpenCV 2 & OpenCV 3 · Issue #4 · district10/cmake-templates](https://github.com/district10/cmake-templates/issues/4).
 
 opencv 2 or less
 
@@ -196,7 +205,15 @@ opencv 2 or less
 project( OPENCV )
 cmake_minimum_required( VERSION 2.6 )
 
-find_package( OpenCV REQUIRED )
+include( $ENV{OpenCV2_DIR}/OpenCVConfig.cmake ) # find_package( OpenCV REQUIRED )
+
+message( STATUS "OpenCV library status:" )
+message( STATUS "    version: ${OpenCV_VERSION}" )
+message( STATUS "    libraries: ${OpenCV_LIBS}" )
+message( STATUS "    include path: ${OpenCV_INCLUDE_DIRS}" )
+
+include_directories( ${OpenCV_INCLUDE_DIRS} )
+
 add_executable( ${PROJECT_NAME}  minarea.c )
 target_link_libraries( ${PROJECT_NAME} ${OpenCV_LIBS} )
 ```
@@ -207,7 +224,7 @@ opencv 3
 project( OPENCV3 )
 cmake_minimum_required( VERSION 2.8 )
 
-find_package( OpenCV REQUIRED )
+include( $ENV{OpenCV3_DIR}/OpenCVConfig.cmake ) # find_package( OpenCV REQUIRED )
 
 message( STATUS "OpenCV library status:" )
 message( STATUS "    version: ${OpenCV_VERSION}" )
@@ -225,9 +242,9 @@ See
   - [opencv](opencv): for opencv2 or less (VS2010 :smile:, Linux :question:)
   - [opencv3](opencv3): for opencv3 (VS2010 :question:, Linux :smile:)
 
-(I have OpenCV2 on Win, and OpenCV3 on Linux, that's why...)
-
 ### 3.7. Example with Support of Qt4
+
+Be sure to make `qmake` caught by CMake, put it in your `$PATH`.
 
 qt4 console
 
@@ -265,7 +282,7 @@ add_library( ${PROJECT_NAME} STATIC ${SRCS_FILES} ${UI_FILES} ${HDRS_FILES} ${MO
 target_link_libraries( ${PROJECT_NAME} ${QT_LIBRARIES} )
 ```
 
-works like `qmake -project`, one ring to rule them all
+Works like `qmake -project`, one ring to rule them all:
 
 ```cmake
 project( QT4 )
@@ -305,6 +322,7 @@ file( GLOB_RECURSE SRCS_FILES *.cpp *.c )
 file( GLOB_RECURSE RCS_FILES *.qrc )
 
 set( FILTERS ".*CompilerId.*" )
+set( FILTERS ".*CMakeFiles/.*" )
 filter_out("${FILTERS}" "${SRCS_FILES}" SRCS_FILES )
 
 qt4_wrap_cpp( MOC_SRCS ${HDRS_FILES} )

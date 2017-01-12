@@ -11,5 +11,13 @@ How to configure OpenCV 3?
 
             2.  set environment variable: $OpenCV_DIR to `<prebuild_root_dir>\build',
                 there should contain a file called `OpenCVConfig.cmake`;
-            
+
             3.  add `%OpenCV_DIR%\x64\vc14\bin' to your $PATH.
+
+Build & Run:
+
+    mkdir build && cd build
+    export OpenCV3_DIR=/usr/local/share/OpenCV
+    cmake ..
+    make
+    ./OPENCV3
