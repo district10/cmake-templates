@@ -419,7 +419,7 @@ endforeach( TARGET_NAME )
 ```cmake
 file( GLOB SRCS src/*.cpp)
 foreach( src ${SRCS} )
-    string( REGEX REPLACE "(.*/|.cpp$)" "" exe ${src} )
+    string( REGEX REPLACE "(^.*/|.cpp$)" "" exe ${src} )
     message( STATUS "${exe} <-- ${src}" )
     add_executable( ${exe} ${src} )
 endforeach( src )
