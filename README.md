@@ -416,6 +416,15 @@ foreach( TARGET_NAME ${PROGRAM_TARGETS} )
 endforeach( TARGET_NAME )
 ```
 
+```cmake
+file( GLOB SRCS src/*.cpp)
+foreach( src ${SRCS} )
+    string( REGEX REPLACE "(.*/|.cpp$)" "" exe ${src} )
+    message( STATUS "${exe} <-- ${src}" )
+    add_executable( ${exe} ${src} )
+endforeach( src )
+```
+
 ## 6. ReadingList
 
 These links may be useful:
