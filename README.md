@@ -60,7 +60,8 @@ make
 ```
 
 But we can build CodeBlocks projects too, see my tutorial:
-[HOWTO: Linux + CMake + CodeBlocks + GNU Make · Issue #2 · district10/cmake-templates](https://github.com/district10/cmake-templates/issues/2), or use qt-creator to open CMakeLists.txt directly, see my tutorial:
+[HOWTO: Linux + CMake + CodeBlocks + GNU Make · Issue #2 · district10/cmake-templates](https://github.com/district10/cmake-templates/issues/2),
+or use qt-creator to open CMakeLists.txt directly, see my tutorial:
 [HOWTO: Use Qt creator to Open CMakeLists.txt directly (will generate proper project files) · Issue #5 · district10/cmake-templates](https://github.com/district10/cmake-templates/issues/5).
 
 ## 3. Examples
@@ -116,25 +117,7 @@ else()
 endif()
 ```
 
-C++11 (aka C++0x) features works on GCC 4.9+:
-
-  - auto
-  - const iterator
-  - foreach (I mean `for(type varname, container)`.)
-  - lambda function
-
-On VS2010:
-
-  - auto
-  - const iterator
-  - lambda function
-
-VS2010 by default supports 1) auto; 2) const iterator; 3) lambda, but not foreach.
-See [cpp11/CMakeLists.txt](cpp11/CMakeLists.txt) for further information.
-
 See [cpp11](cpp11).
-
-Bonus: A VS2010 example with some C++11 features: [cpp11_vs2010](cpp11_vs2010).
 
 I recommend Visual Studio 2015 Community Edition.
 
@@ -239,8 +222,8 @@ target_link_libraries( ${PROJECT_NAME} ${OpenCV_LIBS} )
 
 See
 
-  - [opencv](opencv): for opencv2 or less (VS2010 :smile:, Linux :question:)
-  - [opencv3](opencv3): for opencv3 (VS2010 :question:, Linux :smile:)
+-   [opencv](opencv): for opencv2 or less (VS2010 :smile:, Linux :question:)
+-   [opencv3](opencv3): for opencv3 (VS2010 :question:, Linux :smile:)
 
 ### 3.7. Example with Support of Qt4
 
@@ -344,9 +327,9 @@ target_link_libraries( ${PROJECT_NAME} ${QT_LIBRARIES} )
 
 See
 
-  - [qt4 console application](qt4-console) (VS2010 :smile:, Linux :smile:)
-  - [qt4 GUI application](qt4-gui) (check out the [configs.h.in](qt4-gui/configs.h.in) file) (VS2010 :smile:, Linux :smile:)
-  - [qt4 application for lazy people](qt4-project), works like `qmake -project && qmake && make` on Linux (VS2010 :smile:, Linux :smile:)
+-   [qt4 console application](qt4-console) (VS2010 :smile:, Linux :smile:)
+-   [qt4 GUI application](qt4-gui) (check out the [configs.h.in](qt4-gui/configs.h.in) file) (VS2010 :smile:, Linux :smile:)
+-   [qt4 application for lazy people](qt4-project), works like `qmake -project && qmake && make` on Linux (VS2010 :smile:, Linux :smile:)
 
 ### 3.8. Example with Support of Qt5
 
@@ -373,18 +356,14 @@ See [qt5 project](qt5-project).
 This part is called CMake in Action.
 
 -   [ToyAuthor/luapp: Using lua in C++ style. Build system is CMake.](https://github.com/ToyAuthor/luapp)
-
-    +   a great cmake wrapper for lua, a great c++ wrapper for lua
-    +   I forked it, and annotated (in chinese), it's really great! My fork: [4ker/luapp: Using lua in C++ style. Build system is CMake.](https://github.com/4ker/luapp).
-
+    -   a great cmake wrapper for lua, a great c++ wrapper for lua
+    -   I forked it, and annotated (in chinese), it's really great! My fork: [4ker/luapp: Using lua in C++ style. Build system is CMake.](https://github.com/4ker/luapp).
 -   [district10/algo: 重复造轮子。](https://github.com/district10/algo)
-
-    + Libs
-        * google test (gmock), for testing and benchmarking, etc
-        * cppformat, the missing string formating lib
-    + modulized
-    + advanced linking style
-
+    - Libs
+        -   google test (gmock), for testing and benchmarking, etc
+        -   cppformat, the missing string formating lib
+    -   modulized
+    -   advanced linking style
 -   <https://github.com/district10/bcp/tree/standalone>
 
 ## 4. TODO
@@ -392,29 +371,13 @@ This part is called CMake in Action.
 -   More documentation
 -   More elegant & illustrative examples
 -   Planned Examples
-    + for Windows, link `*.lib` files
-    + for Linux, link `*.a`, `*.so` files, set `rpath`
-    + *etc.*
+    -   for Windows, link `*.lib` files
+    -   for Linux, link `*.a`, `*.so` files, set `rpath`
+    -   *etc.*
 
 ## 5. Snippets
 
-```cmake
-set( PROGRAM_TARGETS
-    SeedFillTest
-    SuperSeedsTest
-    BoundaryFillTest
-    contours
-)
-
-include_directories( ${CMAKE_CURRENT_SOURCE_DIR} )
-
-foreach( TARGET_NAME ${PROGRAM_TARGETS} )
-    add_executable( ${TARGET_NAME} ${TARGET_NAME}.cpp )
-    # add_dependencies( ${TARGET_NAME} Blahblah )
-    target_link_libraries( ${TARGET_NAME} ${OpenCV_LIBS} ${QT_LIBRARIES} Blahblah )
-    set_target_properties( ${TARGET_NAME} PROPERTIES FOLDER MiscExamples )
-endforeach( TARGET_NAME )
-```
+cpp -> exe
 
 ```cmake
 file( GLOB SRCS src/*.cpp)
@@ -429,9 +392,9 @@ endforeach( src )
 
 These links may be useful:
 
-  - [Search · cmake templates](https://github.com/search?utf8=%E2%9C%93&q=cmake+templates)
-  - [giddie/qt-cmake-template: Project template using CMake / Qt / NSIS or WiX / MinGW or MSVS combined in easy-to-use form](https://github.com/giddie/qt-cmake-template)
-  - [cginternals/cmake-init: Template for reliable, cross-platform C++ project setup using cmake.](https://github.com/cginternals/cmake-init)
+-   [Search · cmake templates](https://github.com/search?utf8=%E2%9C%93&q=cmake+templates)
+-   [giddie/qt-cmake-template: Project template using CMake / Qt / NSIS or WiX / MinGW or MSVS combined in easy-to-use form](https://github.com/giddie/qt-cmake-template)
+-   [cginternals/cmake-init: Template for reliable, cross-platform C++ project setup using cmake.](https://github.com/cginternals/cmake-init)
 
 ## 7. Koan
 
