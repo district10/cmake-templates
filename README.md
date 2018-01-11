@@ -10,20 +10,21 @@ Some CMake Templates.
 -   :rage: means test result not sufficiently good
 -   :question: means not tested yet
 
-| Project                       | Linux + GCC 4.8+ | Win + VS2010 | Win + VS2015 |
-| :---------------------------: | :--------------: | :----------: | :----------: |
-| [c][refc]                     | :smile:          |  :smile:     | :smile:      |
-| [c++][refcpp]                 | :smile:          |  :smile:     | :smile:      |
-| [c++11][refcpp11]             | :smile:          |  :rage:      | :smile:      |
-| [c++11vs2010][refcpp11vs2010] | :smile:          |  :smile:     | :smile:      |
-| [module][refmodule]           | :smile:          |  :smile:     | :smile:      |
-| [opencv][refocv]              | :question:       |  :smile:     | :question:   |
-| [opencv3][refocv3]            | :smile:          |  :question:  | :smile:      |
-| [boost][refboost]             | :smile:          |  :smile:     | :question:   |
-| [qt4-console][refqt4c]        | :smile:          |  :smile:     | :smile:      |
-| [qt4-gui][refqt4g]            | :smile:          |  :smile:     | :smile:      |
-| [qt4-project][refqt4p]        | :smile:          |  :smile:     | :smile:      |
-| [qt5-project][refqt5p]        | :smile:          |  :question:  | :smile:      |
+| Project                       | Linux + GCC 4.8+ | Win + VS2010 | Win + VS2015 | macOS   |
+| :---------------------------: | :--------------: | :----------: | :----------: | :---:   |
+| [c][refc]                     | :smile:          |  :smile:     | :smile:      | :smile: |
+| [c++][refcpp]                 | :smile:          |  :smile:     | :smile:      | :smile: |
+| [c++11][refcpp11]             | :smile:          |  :rage:      | :smile:      | :smile: |
+| [c++11vs2010][refcpp11vs2010] | :smile:          |  :smile:     | :smile:      | :smile: |
+| [module][refmodule]           | :smile:          |  :smile:     | :smile:      | :smile: |
+| [opencv][refocv]              | :question:       |  :smile:     | :question:   | :rage:  |
+| [opencv3][refocv3]            | :smile:          |  :question:  | :smile:      | :smile: |
+| [boost][refboost]             | :smile:          |  :smile:     | :question:   | :smile: |
+| [qt4-console][refqt4c]        | :smile:          |  :smile:     | :smile:      | :rage:  |
+| [qt4-gui][refqt4g]            | :smile:          |  :smile:     | :smile:      | :rage:  |
+| [qt4-project][refqt4p]        | :smile:          |  :smile:     | :smile:      | :rage:  |
+| [qt5-project][refqt5p]        | :smile:          |  :question:  | :smile:      | :smile: |
+
 
 [refc]: #31-c-example
 [refcpp]: #32-c-example
