@@ -376,7 +376,7 @@ This part is called CMake in Action.
     -   for Linux, link `*.a`, `*.so` files, set `rpath`
     -   *etc.*
 
-## 5. Snippets
+## 5. Snippets & Helper Functions
 
 cpp -> exe
 
@@ -388,6 +388,13 @@ foreach( src ${SRCS} )
     add_executable( ${exe} ${src} )
 endforeach( src )
 ```
+
+ There are some utility functions in [`utilities.cmake`](utilities.cmake), use `include(utilities.cmake)` to include, then use
+ - `print_include_directories()` to print all included directories,
+ - `print_all_linked_libraries(your_exe_or_lib)` to print all linked libs,
+ - `print_all_variables()` to print all variables
+
+Tip, use `cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=YES ..` to generate compile commands (a json file).
 
 ## 6. ReadingList
 
