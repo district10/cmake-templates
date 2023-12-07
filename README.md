@@ -1,3 +1,13 @@
+To c++/cmake users:
+
+-    It's much better to bind your c++ code to python, then test/debug in python side
+-    I would recommend <https://github.com/pybind/scikit_build_example>
+    - or my small binding repos: [concave-hull](https://github.com/cubao/concave_hull), [pixelmatch](https://github.com/cubao/pybind11_pixelmatch)
+-    This repo is old, for modern cmake, see: <https://cliutils.gitlab.io/modern-cmake> ([中文版本](https://modern-cmake-cn.github.io/Modern-CMake-zh_CN/))
+
+
+---
+
 # cmake-templates
 
 Some CMake Templates.
